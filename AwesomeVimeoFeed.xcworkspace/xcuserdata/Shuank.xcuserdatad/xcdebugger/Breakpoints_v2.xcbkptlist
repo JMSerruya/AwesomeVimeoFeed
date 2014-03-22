@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AwesomeVimeoFeed/AVFFeedViewController.m"
-            timestampString = "417207401.86486"
+            timestampString = "417207572.96834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-fetchVideos"
             landmarkType = "5">
             <Locations>
@@ -136,11 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AwesomeVimeoFeed/AVFFeedViewController.m"
-            timestampString = "417207401.86486"
+            timestampString = "417207572.96834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-fetchVideos"
             landmarkType = "5">
             <Locations>
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AwesomeVimeoFeed/AVFFeedViewController.m"
-            timestampString = "417207426.683613"
+            timestampString = "417207572.96834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>
@@ -198,11 +198,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AwesomeVimeoFeed/AVFFeedViewController.m"
-            timestampString = "417207426.683613"
+            timestampString = "417207572.96834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>

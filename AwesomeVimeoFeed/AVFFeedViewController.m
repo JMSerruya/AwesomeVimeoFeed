@@ -20,6 +20,7 @@
 @implementation AVFFeedViewController
 int _currentPage;
 int _totalPages = 3; //Hardcoded :(
+bool _isLoadingVideos;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,6 +35,7 @@ int _totalPages = 3; //Hardcoded :(
 {
     [super viewDidLoad];
     _currentPage = 1;
+    _isLoadingVideos = NO;
     self.dataArray = [[NSMutableArray alloc] init];
     UINib * feedCellNib = [UINib nibWithNibName:@"VideoFeedItem" bundle:nil];
     [self.tableView registerNib:feedCellNib forCellReuseIdentifier:@"AVFVideoCell"];
@@ -51,6 +53,7 @@ int _totalPages = 3; //Hardcoded :(
 - (void)fetchVideos
 {
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    _isLoadingVideos = YES;
     [[AVFAPIWrapper instance] requestVideosForPage:_currentPage callback:^(BOOL success, NSData *response, NSError *error) {
         NSArray *dictionaryArray = (NSArray*)response;
         for (id videoDictionary in dictionaryArray) {
@@ -62,6 +65,7 @@ int _totalPages = 3; //Hardcoded :(
         }
         [self.tableView reloadData];
         [MBProgressHUD hideHUDForView:self.view animated:YES];
+        _isLoadingVideos = NO;
     }];
 }
 
@@ -97,10 +101,10 @@ int _totalPages = 3; //Hardcoded :(
     UIEdgeInsets inset = aScrollView.contentInset;
     float y = offset.y + bounds.size.height - inset.bottom;
     float h = size.height;
-    float reload_distance = 100; // Distance from bottom.
+    float reload_distance = 0; // Distance from bottom.
     if (y >= h + reload_distance )
     {
-        if (_currentPage < _totalPages)
+        if (_currentPage < _totalPages && !_isLoadingVideos)
         {
             _currentPage++;
             [self fetchVideos];
