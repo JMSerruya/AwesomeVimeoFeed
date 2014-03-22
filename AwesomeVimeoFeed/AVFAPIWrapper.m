@@ -51,8 +51,8 @@ static AVFAPIWrapper *apiInstance = nil;
         if (callback != nil) callback(TRUE,responseObject,nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         @try {
-            if (operation.response.statusCode == 401) {
-
+            if (operation.response.statusCode == 404) {
+                NSLog(@"Page doesn't exist");
             }
         } @catch (NSException *ex) {
 
