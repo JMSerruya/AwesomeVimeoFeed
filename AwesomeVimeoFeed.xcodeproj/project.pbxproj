@@ -15,6 +15,7 @@
 		660C6E6D18DDF6340080121B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E6C18DDF6340080121B /* Security.framework */; };
 		660C6E6F18DDF63C0080121B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E6E18DDF63C0080121B /* SystemConfiguration.framework */; };
 		660C6E7118DDF6490080121B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E7018DDF6490080121B /* CFNetwork.framework */; };
+		660C6E7418DDF7F60080121B /* AVFFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660C6E7318DDF7F60080121B /* AVFFeedViewController.m */; };
 		66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
 		66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1A18DDD80400365AC9 /* CoreGraphics.framework */; };
 		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -22,7 +23,6 @@
 		66987E2518DDD80400365AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2418DDD80400365AC9 /* main.m */; };
 		66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2818DDD80400365AC9 /* AVFAppDelegate.m */; };
 		66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2A18DDD80400365AC9 /* Main.storyboard */; };
-		66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2E18DDD80400365AC9 /* AVFViewController.m */; };
 		66987E3118DDD80400365AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66987E3018DDD80400365AC9 /* Images.xcassets */; };
 		66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E3718DDD80400365AC9 /* XCTest.framework */; };
 		66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
@@ -53,6 +53,8 @@
 		660C6E6C18DDF6340080121B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		660C6E6E18DDF63C0080121B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		660C6E7018DDF6490080121B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		660C6E7218DDF7F60080121B /* AVFFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFFeedViewController.h; sourceTree = "<group>"; };
+		660C6E7318DDF7F60080121B /* AVFFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFFeedViewController.m; sourceTree = "<group>"; };
 		66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeVimeoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66987E1818DDD80400365AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66987E1A18DDD80400365AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +66,6 @@
 		66987E2718DDD80400365AC9 /* AVFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFAppDelegate.h; sourceTree = "<group>"; };
 		66987E2818DDD80400365AC9 /* AVFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFAppDelegate.m; sourceTree = "<group>"; };
 		66987E2B18DDD80400365AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		66987E2D18DDD80400365AC9 /* AVFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFViewController.h; sourceTree = "<group>"; };
-		66987E2E18DDD80400365AC9 /* AVFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFViewController.m; sourceTree = "<group>"; };
 		66987E3018DDD80400365AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeVimeoFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66987E3718DDD80400365AC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -116,8 +116,8 @@
 		660C6E6018DDD9150080121B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				66987E2D18DDD80400365AC9 /* AVFViewController.h */,
-				66987E2E18DDD80400365AC9 /* AVFViewController.m */,
+				660C6E7218DDF7F60080121B /* AVFFeedViewController.h */,
+				660C6E7318DDF7F60080121B /* AVFFeedViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +130,7 @@
 				660C6E6218DDEBEA0080121B /* VideoFeedItem.xib */,
 			);
 			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		660C6E6B18DDF2290080121B /* Cells */ = {
@@ -139,13 +140,12 @@
 				660C6E6918DDF2230080121B /* AVFVideoCell.m */,
 			);
 			name = Cells;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		66987E0C18DDD80400365AC9 = {
 			isa = PBXGroup;
 			children = (
-				660C6E6B18DDF2290080121B /* Cells */,
-				660C6E6118DDEB670080121B /* Resources */,
 				66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */,
 				66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */,
 				66987E1718DDD80400365AC9 /* Frameworks */,
@@ -181,6 +181,8 @@
 		66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */ = {
 			isa = PBXGroup;
 			children = (
+				660C6E6B18DDF2290080121B /* Cells */,
+				660C6E6118DDEB670080121B /* Resources */,
 				660C6E6018DDD9150080121B /* ViewControllers */,
 				660C6E5F18DDD8FE0080121B /* API */,
 				66987E2718DDD80400365AC9 /* AVFAppDelegate.h */,
@@ -357,11 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C6E7418DDF7F60080121B /* AVFFeedViewController.m in Sources */,
 				66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */,
 				66987E2518DDD80400365AC9 /* main.m in Sources */,
 				660C6E6A18DDF2230080121B /* AVFVideoCell.m in Sources */,
 				660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */,
-				66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

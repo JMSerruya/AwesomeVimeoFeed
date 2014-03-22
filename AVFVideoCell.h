@@ -16,4 +16,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *videoDescription;
 
 @property (strong, nonatomic) IBOutlet UILabel *videoTitle;
+
+- (void)setData:(NSDictionary*)data;
 @end
