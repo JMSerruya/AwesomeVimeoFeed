@@ -12,9 +12,12 @@
 		660C6E6618DDED440080121B /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 660C6E6418DDED440080121B /* playbutton.png */; };
 		660C6E6718DDED440080121B /* playbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 660C6E6518DDED440080121B /* playbutton@2x.png */; };
 		660C6E6A18DDF2230080121B /* AVFVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 660C6E6918DDF2230080121B /* AVFVideoCell.m */; };
+		660C6E6D18DDF6340080121B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E6C18DDF6340080121B /* Security.framework */; };
+		660C6E6F18DDF63C0080121B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E6E18DDF63C0080121B /* SystemConfiguration.framework */; };
+		660C6E7118DDF6490080121B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660C6E7018DDF6490080121B /* CFNetwork.framework */; };
 		66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
 		66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1A18DDD80400365AC9 /* CoreGraphics.framework */; };
-		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2118DDD80400365AC9 /* InfoPlist.strings */; };
 		66987E2518DDD80400365AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2418DDD80400365AC9 /* main.m */; };
 		66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2818DDD80400365AC9 /* AVFAppDelegate.m */; };
@@ -23,7 +26,7 @@
 		66987E3118DDD80400365AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66987E3018DDD80400365AC9 /* Images.xcassets */; };
 		66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E3718DDD80400365AC9 /* XCTest.framework */; };
 		66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
-		66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E4018DDD80400365AC9 /* InfoPlist.strings */; };
 		66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */; };
 		8F0931B4F2504CEF841FF28E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7161182FD87441D5AEA4C509 /* libPods.a */; };
@@ -47,6 +50,9 @@
 		660C6E6518DDED440080121B /* playbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playbutton@2x.png"; sourceTree = "<group>"; };
 		660C6E6818DDF2230080121B /* AVFVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFVideoCell.h; sourceTree = "<group>"; };
 		660C6E6918DDF2230080121B /* AVFVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFVideoCell.m; sourceTree = "<group>"; };
+		660C6E6C18DDF6340080121B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		660C6E6E18DDF63C0080121B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		660C6E7018DDF6490080121B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeVimeoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66987E1818DDD80400365AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66987E1A18DDD80400365AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660C6E7118DDF6490080121B /* CFNetwork.framework in Frameworks */,
+				660C6E6F18DDF63C0080121B /* SystemConfiguration.framework in Frameworks */,
+				660C6E6D18DDF6340080121B /* Security.framework in Frameworks */,
 				66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */,
 				66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */,
 				66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */,
@@ -157,6 +166,9 @@
 		66987E1718DDD80400365AC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				660C6E7018DDF6490080121B /* CFNetwork.framework */,
+				660C6E6E18DDF63C0080121B /* SystemConfiguration.framework */,
+				660C6E6C18DDF6340080121B /* Security.framework */,
 				66987E1818DDD80400365AC9 /* Foundation.framework */,
 				66987E1A18DDD80400365AC9 /* CoreGraphics.framework */,
 				66987E1C18DDD80400365AC9 /* UIKit.framework */,
@@ -480,6 +492,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
 				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,6 +507,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
 				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
