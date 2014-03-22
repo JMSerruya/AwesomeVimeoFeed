@@ -10,6 +10,7 @@
 #import "AVFAPIWrapper.h"
 #import "AVFVideoCell.h"
 #import "AVFVideoPreviewModel.h"
+#import "MBProgressHUD.h"
 
 
 @interface AVFFeedViewController ()
@@ -49,6 +50,7 @@ int _totalPages = 3; //Hardcoded :(
 
 - (void)fetchVideos
 {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [[AVFAPIWrapper instance] requestVideosForPage:_currentPage callback:^(BOOL success, NSData *response, NSError *error) {
         NSArray *dictionaryArray = (NSArray*)response;
         for (id videoDictionary in dictionaryArray) {
@@ -59,6 +61,7 @@ int _totalPages = 3; //Hardcoded :(
             }
         }
         [self.tableView reloadData];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
 }
 
