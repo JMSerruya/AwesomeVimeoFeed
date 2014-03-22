@@ -11,4 +11,4 @@ Frameworks/Dependencies
 Install CocoaPods (http://cocoapods.org/)
 Install AFNetworking (https://github.com/AFNetworking/AFNetworking)
 Install MBProgressHUD (https://github.com/jdg/MBProgressHUD)
-
+run pod install in the root of the repository to install the dependencies.
