@@ -7,6 +7,7 @@
 //
 
 #import "AVFViewController.h"
+#import "AVFAPIWrapper.h"
 
 @interface AVFViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [[AVFAPIWrapper instance] requestVideosForPage:2 callback:^(BOOL success, NSData *response, NSError *error) {
+        NSDictionary * videos = (NSDictionary*) response;
+        NSLog(@"%@", videos);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

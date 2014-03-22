@@ -14,5 +14,7 @@
 typedef void(^CompletionBlock)(BOOL success, NSData * response, NSError * error );
 +(id)instance;
 @property (nonatomic,strong) AFHTTPRequestSerializer * requestSerializer;
+- (void)requestVideosForPage:(int)page callback:(CompletionBlock)callback;
+
 
 @end

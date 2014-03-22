@@ -25,19 +25,29 @@ static AVFAPIWrapper *apiInstance = nil;
 
 #pragma mark -
 
-- (void)performMethod:(NSString *)method AtPath:(NSString *)path parameters:(NSDictionary *)params callback:(CompletionBlock)callback
+- (void)requestVideosForPage:(int)page callback:(CompletionBlock)callback
 {
-    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:path parameters:params error:nil];
-    [request setTimeoutInterval:20.0];
+    //Hardcoded values for everything except page number
+    //https://developer.vimeo.com/apis/simple#album-request-url
+    //http://vimeo.com/api/v2/album/58/videos.json?page=1
+    NSString *request = [NSString stringWithFormat:@"http://vimeo.com/api/v2/album/58/videos.json?page=%d", page];
+    [self performRequest:request parameters:nil callback:^(BOOL success, NSData *response, NSError *error) {
+        callback(success, response, error);
+    }];
 
-    [self performRequest:request callback:callback];
 }
 
--(void)performRequest:(NSURLRequest *)request callback:(CompletionBlock)callback
-{
+#pragma mark -
 
-    AFHTTPRequestOperation * httpOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    [httpOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+-(void)performRequest:(NSString *)path parameters:(NSDictionary *)params callback:(CompletionBlock)callback
+{
+    NSURL *url = [NSURL URLWithString:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (callback != nil) callback(TRUE,responseObject,nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         @try {
@@ -50,12 +60,7 @@ static AVFAPIWrapper *apiInstance = nil;
 
         if (callback != nil) callback(FALSE,nil,error);
     }];
-    [httpOperation start];
+    [operation start];
 }
 
-
-- (void)performGetRequestAtPath:(NSString *)path parameters:(NSDictionary *)params callback:(CompletionBlock)callback
-{
-    [self performMethod:@"GET" AtPath:path parameters:params callback:callback];
-}
 @end
