@@ -1,1088 +1,543 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>35A85046E85040B098BC8F2C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>66987E0C18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E1E18DDD80400365AC9</string>
-				<string>66987E3D18DDD80400365AC9</string>
-				<string>66987E1718DDD80400365AC9</string>
-				<string>66987E1618DDD80400365AC9</string>
-				<string>B3AC83F411E64EB392A7931E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E0D18DDD80400365AC9</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>AVF</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Juan Manuel Serruya</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>66987E3518DDD80400365AC9</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>66987E1418DDD80400365AC9</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>66987E1018DDD80400365AC9</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>66987E0C18DDD80400365AC9</string>
-			<key>productRefGroup</key>
-			<string>66987E1618DDD80400365AC9</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>66987E1418DDD80400365AC9</string>
-				<string>66987E3518DDD80400365AC9</string>
-			</array>
-		</dict>
-		<key>66987E1018DDD80400365AC9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>66987E4518DDD80400365AC9</string>
-				<string>66987E4618DDD80400365AC9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>66987E1118DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E2918DDD80400365AC9</string>
-				<string>66987E2518DDD80400365AC9</string>
-				<string>66987E2F18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E1218DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E1B18DDD80400365AC9</string>
-				<string>66987E1D18DDD80400365AC9</string>
-				<string>66987E1918DDD80400365AC9</string>
-				<string>8F0931B4F2504CEF841FF28E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E1318DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E3118DDD80400365AC9</string>
-				<string>66987E2318DDD80400365AC9</string>
-				<string>66987E2C18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E1418DDD80400365AC9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>66987E4718DDD80400365AC9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>35A85046E85040B098BC8F2C</string>
-				<string>66987E1118DDD80400365AC9</string>
-				<string>66987E1218DDD80400365AC9</string>
-				<string>66987E1318DDD80400365AC9</string>
-				<string>C3F227AB329F4D928ABEDDD7</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AwesomeVimeoFeed</string>
-			<key>productName</key>
-			<string>AwesomeVimeoFeed</string>
-			<key>productReference</key>
-			<string>66987E1518DDD80400365AC9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>66987E1518DDD80400365AC9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeed.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>66987E1618DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E1518DDD80400365AC9</string>
-				<string>66987E3618DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E1718DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E1818DDD80400365AC9</string>
-				<string>66987E1A18DDD80400365AC9</string>
-				<string>66987E1C18DDD80400365AC9</string>
-				<string>66987E3718DDD80400365AC9</string>
-				<string>7161182FD87441D5AEA4C509</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E1818DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>66987E1918DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E1818DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E1A18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>66987E1B18DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E1A18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E1C18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>66987E1D18DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E1C18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E1E18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E2718DDD80400365AC9</string>
-				<string>66987E2818DDD80400365AC9</string>
-				<string>66987E2A18DDD80400365AC9</string>
-				<string>66987E2D18DDD80400365AC9</string>
-				<string>66987E2E18DDD80400365AC9</string>
-				<string>66987E3018DDD80400365AC9</string>
-				<string>66987E1F18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeed</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E1F18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E2018DDD80400365AC9</string>
-				<string>66987E2118DDD80400365AC9</string>
-				<string>66987E2418DDD80400365AC9</string>
-				<string>66987E2618DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2018DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeed-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2118DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E2218DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2218DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2318DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E2118DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E2418DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2518DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E2418DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E2618DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeed-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2718DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVFAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2818DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AVFAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2918DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E2818DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E2A18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E2B18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2B18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2C18DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E2A18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E2D18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVFViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2E18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AVFViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E2F18DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E2E18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E3018DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E3118DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E3018DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E3218DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E4418DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E3318DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E3818DDD80400365AC9</string>
-				<string>66987E3A18DDD80400365AC9</string>
-				<string>66987E3918DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E3418DDD80400365AC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>66987E4218DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>66987E3518DDD80400365AC9</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>66987E4A18DDD80400365AC9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>66987E3218DDD80400365AC9</string>
-				<string>66987E3318DDD80400365AC9</string>
-				<string>66987E3418DDD80400365AC9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>66987E3C18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AwesomeVimeoFeedTests</string>
-			<key>productName</key>
-			<string>AwesomeVimeoFeedTests</string>
-			<key>productReference</key>
-			<string>66987E3618DDD80400365AC9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>66987E3618DDD80400365AC9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeedTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>66987E3718DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>66987E3818DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E3718DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E3918DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E1818DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E3A18DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E1C18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E3B18DDD80400365AC9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>66987E0D18DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>66987E1418DDD80400365AC9</string>
-			<key>remoteInfo</key>
-			<string>AwesomeVimeoFeed</string>
-		</dict>
-		<key>66987E3C18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>66987E1418DDD80400365AC9</string>
-			<key>targetProxy</key>
-			<string>66987E3B18DDD80400365AC9</string>
-		</dict>
-		<key>66987E3D18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E4318DDD80400365AC9</string>
-				<string>66987E3E18DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeedTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E3E18DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E3F18DDD80400365AC9</string>
-				<string>66987E4018DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E3F18DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeedTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E4018DDD80400365AC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>66987E4118DDD80400365AC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E4118DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E4218DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E4018DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E4318DDD80400365AC9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AwesomeVimeoFeedTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>66987E4418DDD80400365AC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>66987E4318DDD80400365AC9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>66987E4518DDD80400365AC9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>66987E4618DDD80400365AC9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>66987E4718DDD80400365AC9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>66987E4818DDD80400365AC9</string>
-				<string>66987E4918DDD80400365AC9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>66987E4818DDD80400365AC9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B3AC83F411E64EB392A7931E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>66987E4918DDD80400365AC9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B3AC83F411E64EB392A7931E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>66987E4A18DDD80400365AC9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>66987E4B18DDD80400365AC9</string>
-				<string>66987E4C18DDD80400365AC9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>66987E4B18DDD80400365AC9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>66987E4C18DDD80400365AC9</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7161182FD87441D5AEA4C509</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8F0931B4F2504CEF841FF28E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7161182FD87441D5AEA4C509</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B3AC83F411E64EB392A7931E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3F227AB329F4D928ABEDDD7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>66987E0D18DDD80400365AC9</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 660C6E5D18DDD8F60080121B /* AVFAPIWrapper.m */; };
+		66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
+		66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1A18DDD80400365AC9 /* CoreGraphics.framework */; };
+		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2118DDD80400365AC9 /* InfoPlist.strings */; };
+		66987E2518DDD80400365AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2418DDD80400365AC9 /* main.m */; };
+		66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2818DDD80400365AC9 /* AVFAppDelegate.m */; };
+		66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2A18DDD80400365AC9 /* Main.storyboard */; };
+		66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2E18DDD80400365AC9 /* AVFViewController.m */; };
+		66987E3118DDD80400365AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66987E3018DDD80400365AC9 /* Images.xcassets */; };
+		66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E3718DDD80400365AC9 /* XCTest.framework */; };
+		66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
+		66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E4018DDD80400365AC9 /* InfoPlist.strings */; };
+		66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */; };
+		8F0931B4F2504CEF841FF28E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7161182FD87441D5AEA4C509 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66987E3B18DDD80400365AC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66987E0D18DDD80400365AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66987E1418DDD80400365AC9;
+			remoteInfo = AwesomeVimeoFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		660C6E5C18DDD8F60080121B /* AVFAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFAPIWrapper.h; sourceTree = "<group>"; };
+		660C6E5D18DDD8F60080121B /* AVFAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFAPIWrapper.m; sourceTree = "<group>"; };
+		66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeVimeoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66987E1818DDD80400365AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66987E1A18DDD80400365AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66987E1C18DDD80400365AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66987E2018DDD80400365AC9 /* AwesomeVimeoFeed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeVimeoFeed-Info.plist"; sourceTree = "<group>"; };
+		66987E2218DDD80400365AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66987E2418DDD80400365AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66987E2618DDD80400365AC9 /* AwesomeVimeoFeed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeVimeoFeed-Prefix.pch"; sourceTree = "<group>"; };
+		66987E2718DDD80400365AC9 /* AVFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFAppDelegate.h; sourceTree = "<group>"; };
+		66987E2818DDD80400365AC9 /* AVFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFAppDelegate.m; sourceTree = "<group>"; };
+		66987E2B18DDD80400365AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66987E2D18DDD80400365AC9 /* AVFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFViewController.h; sourceTree = "<group>"; };
+		66987E2E18DDD80400365AC9 /* AVFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFViewController.m; sourceTree = "<group>"; };
+		66987E3018DDD80400365AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeVimeoFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66987E3718DDD80400365AC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		66987E3F18DDD80400365AC9 /* AwesomeVimeoFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeVimeoFeedTests-Info.plist"; sourceTree = "<group>"; };
+		66987E4118DDD80400365AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeVimeoFeedTests.m; sourceTree = "<group>"; };
+		7161182FD87441D5AEA4C509 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AC83F411E64EB392A7931E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66987E1218DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */,
+				66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */,
+				66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */,
+				8F0931B4F2504CEF841FF28E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3318DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */,
+				66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */,
+				66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660C6E5F18DDD8FE0080121B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				660C6E5C18DDD8F60080121B /* AVFAPIWrapper.h */,
+				660C6E5D18DDD8F60080121B /* AVFAPIWrapper.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		660C6E6018DDD9150080121B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66987E2D18DDD80400365AC9 /* AVFViewController.h */,
+				66987E2E18DDD80400365AC9 /* AVFViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		66987E0C18DDD80400365AC9 = {
+			isa = PBXGroup;
+			children = (
+				66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */,
+				66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */,
+				66987E1718DDD80400365AC9 /* Frameworks */,
+				66987E1618DDD80400365AC9 /* Products */,
+				B3AC83F411E64EB392A7931E /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		66987E1618DDD80400365AC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */,
+				66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66987E1718DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66987E1818DDD80400365AC9 /* Foundation.framework */,
+				66987E1A18DDD80400365AC9 /* CoreGraphics.framework */,
+				66987E1C18DDD80400365AC9 /* UIKit.framework */,
+				66987E3718DDD80400365AC9 /* XCTest.framework */,
+				7161182FD87441D5AEA4C509 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */ = {
+			isa = PBXGroup;
+			children = (
+				660C6E6018DDD9150080121B /* ViewControllers */,
+				660C6E5F18DDD8FE0080121B /* API */,
+				66987E2718DDD80400365AC9 /* AVFAppDelegate.h */,
+				66987E2818DDD80400365AC9 /* AVFAppDelegate.m */,
+				66987E2A18DDD80400365AC9 /* Main.storyboard */,
+				66987E3018DDD80400365AC9 /* Images.xcassets */,
+				66987E1F18DDD80400365AC9 /* Supporting Files */,
+			);
+			path = AwesomeVimeoFeed;
+			sourceTree = "<group>";
+		};
+		66987E1F18DDD80400365AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66987E2018DDD80400365AC9 /* AwesomeVimeoFeed-Info.plist */,
+				66987E2118DDD80400365AC9 /* InfoPlist.strings */,
+				66987E2418DDD80400365AC9 /* main.m */,
+				66987E2618DDD80400365AC9 /* AwesomeVimeoFeed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */,
+				66987E3E18DDD80400365AC9 /* Supporting Files */,
+			);
+			path = AwesomeVimeoFeedTests;
+			sourceTree = "<group>";
+		};
+		66987E3E18DDD80400365AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66987E3F18DDD80400365AC9 /* AwesomeVimeoFeedTests-Info.plist */,
+				66987E4018DDD80400365AC9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66987E4718DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeed" */;
+			buildPhases = (
+				35A85046E85040B098BC8F2C /* Check Pods Manifest.lock */,
+				66987E1118DDD80400365AC9 /* Sources */,
+				66987E1218DDD80400365AC9 /* Frameworks */,
+				66987E1318DDD80400365AC9 /* Resources */,
+				C3F227AB329F4D928ABEDDD7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeVimeoFeed;
+			productName = AwesomeVimeoFeed;
+			productReference = 66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66987E3518DDD80400365AC9 /* AwesomeVimeoFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66987E4A18DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeedTests" */;
+			buildPhases = (
+				66987E3218DDD80400365AC9 /* Sources */,
+				66987E3318DDD80400365AC9 /* Frameworks */,
+				66987E3418DDD80400365AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66987E3C18DDD80400365AC9 /* PBXTargetDependency */,
+			);
+			name = AwesomeVimeoFeedTests;
+			productName = AwesomeVimeoFeedTests;
+			productReference = 66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66987E0D18DDD80400365AC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AVF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Juan Manuel Serruya";
+				TargetAttributes = {
+					66987E3518DDD80400365AC9 = {
+						TestTargetID = 66987E1418DDD80400365AC9;
+					};
+				};
+			};
+			buildConfigurationList = 66987E1018DDD80400365AC9 /* Build configuration list for PBXProject "AwesomeVimeoFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66987E0C18DDD80400365AC9;
+			productRefGroup = 66987E1618DDD80400365AC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */,
+				66987E3518DDD80400365AC9 /* AwesomeVimeoFeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66987E1318DDD80400365AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E3118DDD80400365AC9 /* Images.xcassets in Resources */,
+				66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */,
+				66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3418DDD80400365AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35A85046E85040B098BC8F2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F227AB329F4D928ABEDDD7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66987E1118DDD80400365AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */,
+				66987E2518DDD80400365AC9 /* main.m in Sources */,
+				660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */,
+				66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3218DDD80400365AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66987E3C18DDD80400365AC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */;
+			targetProxy = 66987E3B18DDD80400365AC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66987E2118DDD80400365AC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E2218DDD80400365AC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66987E2A18DDD80400365AC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E2B18DDD80400365AC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66987E4018DDD80400365AC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E4118DDD80400365AC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66987E4518DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66987E4618DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66987E4818DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AC83F411E64EB392A7931E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66987E4918DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AC83F411E64EB392A7931E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		66987E4B18DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		66987E4C18DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66987E1018DDD80400365AC9 /* Build configuration list for PBXProject "AwesomeVimeoFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4518DDD80400365AC9 /* Debug */,
+				66987E4618DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66987E4718DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4818DDD80400365AC9 /* Debug */,
+				66987E4918DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66987E4A18DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4B18DDD80400365AC9 /* Debug */,
+				66987E4C18DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66987E0D18DDD80400365AC9 /* Project object */;
+}
