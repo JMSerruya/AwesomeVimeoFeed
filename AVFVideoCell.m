@@ -8,6 +8,7 @@
 
 #import "AVFVideoCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "AVFVideoPreviewModel.h"
 
 @implementation AVFVideoCell
 
@@ -31,17 +32,16 @@
     NSLog(@"Not Implemented");
 }
 
-- (void)setData:(NSDictionary*)data
+- (void)setData:(AVFVideoPreviewModel*)data
 {
-    self.userName.text = [data objectForKey:@"user_name"];
-    [self.userPortrait setImageWithURL:[NSURL URLWithString:[data objectForKey:@"user_portrait_large"]]
+    self.userName.text = data.userName;
+    [self.userPortrait setImageWithURL:[NSURL URLWithString:data.userPortrait]
                       placeholderImage:nil];
-    self.videoUploadDate.text = [self formatDate:[data objectForKey:@"upload_date"]];
-    [self.videoThumb setImageWithURL:[NSURL URLWithString:[data objectForKey:@"thumbnail_large"]]
+    self.videoUploadDate.text = [self formatDate:data.videoUploadDate];
+    [self.videoThumb setImageWithURL:[NSURL URLWithString:data.videoThumb]
                       placeholderImage:nil];
-    self.videoDescription.text = [self stringByStrippingHTML:[data objectForKey:@"description"]];
-    self.videoTitle.text = [data objectForKey:@"title"];
-    NSLog(@"%@", data);
+    self.videoDescription.text = [self stringByStrippingHTML:data.description];
+    self.videoTitle.text = data.videoTitle;
 }
 
 - (NSString*)formatDate:(NSString*)date

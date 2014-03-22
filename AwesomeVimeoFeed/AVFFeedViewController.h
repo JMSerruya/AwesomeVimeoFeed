@@ -10,5 +10,7 @@
 
 @interface AVFFeedViewController : UITableViewController <UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray * dataArray;
+@property (strong, nonatomic) NSMutableArray * dataArray;
+@property (strong) UIActivityIndicatorView *spinner;
 @end
+

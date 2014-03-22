@@ -9,12 +9,16 @@
 #import "AVFFeedViewController.h"
 #import "AVFAPIWrapper.h"
 #import "AVFVideoCell.h"
+#import "AVFVideoPreviewModel.h"
+
 
 @interface AVFFeedViewController ()
 
 @end
 
 @implementation AVFFeedViewController
+int _currentPage;
+int _totalPages = 3; //Hardcoded :(
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,21 +32,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    _currentPage = 1;
+    self.dataArray = [[NSMutableArray alloc] init];
     UINib * feedCellNib = [UINib nibWithNibName:@"VideoFeedItem" bundle:nil];
     [self.tableView registerNib:feedCellNib forCellReuseIdentifier:@"AVFVideoCell"];
-
-    [[AVFAPIWrapper instance] requestVideosForPage:1 callback:^(BOOL success, NSData *response, NSError *error) {
-        self.dataArray = (NSArray*) response;
-        NSLog(@"%d", [self.dataArray count]);
-        [self.tableView reloadData];
-    }];
+    [self fetchVideos];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - fetchVideos
+
+- (void)fetchVideos
+{
+    [[AVFAPIWrapper instance] requestVideosForPage:_currentPage callback:^(BOOL success, NSData *response, NSError *error) {
+        NSArray *dictionaryArray = (NSArray*)response;
+        for (id videoDictionary in dictionaryArray) {
+            AVFVideoPreviewModel *videoModel = [[AVFVideoPreviewModel alloc]
+                          initWithDictionary:videoDictionary];
+            if (![self.dataArray containsObject:videoModel]) {
+                [self.dataArray addObject:videoModel];
+            }
+        }
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - Table view data source
@@ -64,34 +81,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"AVFVideoCell";
-
-    AVFVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    AVFVideoCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"AVFVideoCell" forIndexPath:indexPath];
     [cell setData:[self.dataArray objectAtIndex:indexPath.row]];
-    
-    
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *) cell     forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)scrollViewDidScroll:(UIScrollView *)aScrollView
 {
-    int totalPageCount =
-    int count = [self.dataArray count];;
-
-    if(indexPath.row == count - 1) // If going to display last row available in the array download the others.
+    CGPoint offset = aScrollView.contentOffset;
+    CGRect bounds = aScrollView.bounds;
+    CGSize size = aScrollView.contentSize;
+    UIEdgeInsets inset = aScrollView.contentInset;
+    float y = offset.y + bounds.size.height - inset.bottom;
+    float h = size.height;
+    float reload_distance = 100; // Distance from bottom.
+    if (y >= h + reload_distance )
     {
-        //totalPageCount is the total pages available in the server. This needs to be stored on initial server call
-        //currentIndex is the index of page last retreived from server. This needs to be incremented every time new page is retreived.
-        if(currentIndex <= totalPageCount)
+        if (_currentPage < _totalPages)
         {
-            [self getContentsForPage:currentIndex];
+            _currentPage++;
+            [self fetchVideos];
         }
-        else
-        {
-            self.tableView.tableFooterView = nil; //You can add an activity indicator in tableview's footer in viewDidLoad to show a loading status to user.
-        }
-
     }
 }
+
 
 @end

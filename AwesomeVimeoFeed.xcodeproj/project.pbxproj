@@ -29,6 +29,7 @@
 		66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E4018DDD80400365AC9 /* InfoPlist.strings */; };
 		66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */; };
+		66EB958D18DE0CE8006704BB /* AVFVideoPreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EB958C18DE0CE8006704BB /* AVFVideoPreviewModel.m */; };
 		8F0931B4F2504CEF841FF28E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7161182FD87441D5AEA4C509 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		66987E3F18DDD80400365AC9 /* AwesomeVimeoFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeVimeoFeedTests-Info.plist"; sourceTree = "<group>"; };
 		66987E4118DDD80400365AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeVimeoFeedTests.m; sourceTree = "<group>"; };
+		66EB958B18DE0CE8006704BB /* AVFVideoPreviewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFVideoPreviewModel.h; sourceTree = "<group>"; };
+		66EB958C18DE0CE8006704BB /* AVFVideoPreviewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFVideoPreviewModel.m; sourceTree = "<group>"; };
 		7161182FD87441D5AEA4C509 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AC83F411E64EB392A7931E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +184,7 @@
 		66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */ = {
 			isa = PBXGroup;
 			children = (
+				66EB958E18DE0CED006704BB /* Model */,
 				660C6E6B18DDF2290080121B /* Cells */,
 				660C6E6118DDEB670080121B /* Resources */,
 				660C6E6018DDD9150080121B /* ViewControllers */,
@@ -221,6 +225,15 @@
 				66987E4018DDD80400365AC9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66EB958E18DE0CED006704BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66EB958B18DE0CE8006704BB /* AVFVideoPreviewModel.h */,
+				66EB958C18DE0CE8006704BB /* AVFVideoPreviewModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +374,7 @@
 			files = (
 				660C6E7418DDF7F60080121B /* AVFFeedViewController.m in Sources */,
 				66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */,
+				66EB958D18DE0CE8006704BB /* AVFVideoPreviewModel.m in Sources */,
 				66987E2518DDD80400365AC9 /* main.m in Sources */,
 				660C6E6A18DDF2230080121B /* AVFVideoCell.m in Sources */,
 				660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */,
