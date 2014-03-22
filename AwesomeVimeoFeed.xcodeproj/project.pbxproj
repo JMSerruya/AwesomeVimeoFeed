@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
+		66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1A18DDD80400365AC9 /* CoreGraphics.framework */; };
+		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2118DDD80400365AC9 /* InfoPlist.strings */; };
+		66987E2518DDD80400365AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2418DDD80400365AC9 /* main.m */; };
+		66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2818DDD80400365AC9 /* AVFAppDelegate.m */; };
+		66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66987E2A18DDD80400365AC9 /* Main.storyboard */; };
+		66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E2E18DDD80400365AC9 /* AVFViewController.m */; };
+		66987E3118DDD80400365AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66987E3018DDD80400365AC9 /* Images.xcassets */; };
+		66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E3718DDD80400365AC9 /* XCTest.framework */; };
+		66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
+		66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
+		66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66987E4018DDD80400365AC9 /* InfoPlist.strings */; };
+		66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66987E3B18DDD80400365AC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66987E0D18DDD80400365AC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66987E1418DDD80400365AC9;
+			remoteInfo = AwesomeVimeoFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeVimeoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66987E1818DDD80400365AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66987E1A18DDD80400365AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66987E1C18DDD80400365AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66987E2018DDD80400365AC9 /* AwesomeVimeoFeed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeVimeoFeed-Info.plist"; sourceTree = "<group>"; };
+		66987E2218DDD80400365AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66987E2418DDD80400365AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66987E2618DDD80400365AC9 /* AwesomeVimeoFeed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AwesomeVimeoFeed-Prefix.pch"; sourceTree = "<group>"; };
+		66987E2718DDD80400365AC9 /* AVFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFAppDelegate.h; sourceTree = "<group>"; };
+		66987E2818DDD80400365AC9 /* AVFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFAppDelegate.m; sourceTree = "<group>"; };
+		66987E2B18DDD80400365AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66987E2D18DDD80400365AC9 /* AVFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFViewController.h; sourceTree = "<group>"; };
+		66987E2E18DDD80400365AC9 /* AVFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFViewController.m; sourceTree = "<group>"; };
+		66987E3018DDD80400365AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeVimeoFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66987E3718DDD80400365AC9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		66987E3F18DDD80400365AC9 /* AwesomeVimeoFeedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwesomeVimeoFeedTests-Info.plist"; sourceTree = "<group>"; };
+		66987E4118DDD80400365AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeVimeoFeedTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66987E1218DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */,
+				66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */,
+				66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3318DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E3818DDD80400365AC9 /* XCTest.framework in Frameworks */,
+				66987E3A18DDD80400365AC9 /* UIKit.framework in Frameworks */,
+				66987E3918DDD80400365AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66987E0C18DDD80400365AC9 = {
+			isa = PBXGroup;
+			children = (
+				66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */,
+				66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */,
+				66987E1718DDD80400365AC9 /* Frameworks */,
+				66987E1618DDD80400365AC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66987E1618DDD80400365AC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */,
+				66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66987E1718DDD80400365AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66987E1818DDD80400365AC9 /* Foundation.framework */,
+				66987E1A18DDD80400365AC9 /* CoreGraphics.framework */,
+				66987E1C18DDD80400365AC9 /* UIKit.framework */,
+				66987E3718DDD80400365AC9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */ = {
+			isa = PBXGroup;
+			children = (
+				66987E2718DDD80400365AC9 /* AVFAppDelegate.h */,
+				66987E2818DDD80400365AC9 /* AVFAppDelegate.m */,
+				66987E2A18DDD80400365AC9 /* Main.storyboard */,
+				66987E2D18DDD80400365AC9 /* AVFViewController.h */,
+				66987E2E18DDD80400365AC9 /* AVFViewController.m */,
+				66987E3018DDD80400365AC9 /* Images.xcassets */,
+				66987E1F18DDD80400365AC9 /* Supporting Files */,
+			);
+			path = AwesomeVimeoFeed;
+			sourceTree = "<group>";
+		};
+		66987E1F18DDD80400365AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66987E2018DDD80400365AC9 /* AwesomeVimeoFeed-Info.plist */,
+				66987E2118DDD80400365AC9 /* InfoPlist.strings */,
+				66987E2418DDD80400365AC9 /* main.m */,
+				66987E2618DDD80400365AC9 /* AwesomeVimeoFeed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				66987E4318DDD80400365AC9 /* AwesomeVimeoFeedTests.m */,
+				66987E3E18DDD80400365AC9 /* Supporting Files */,
+			);
+			path = AwesomeVimeoFeedTests;
+			sourceTree = "<group>";
+		};
+		66987E3E18DDD80400365AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66987E3F18DDD80400365AC9 /* AwesomeVimeoFeedTests-Info.plist */,
+				66987E4018DDD80400365AC9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66987E4718DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeed" */;
+			buildPhases = (
+				66987E1118DDD80400365AC9 /* Sources */,
+				66987E1218DDD80400365AC9 /* Frameworks */,
+				66987E1318DDD80400365AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeVimeoFeed;
+			productName = AwesomeVimeoFeed;
+			productReference = 66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66987E3518DDD80400365AC9 /* AwesomeVimeoFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66987E4A18DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeedTests" */;
+			buildPhases = (
+				66987E3218DDD80400365AC9 /* Sources */,
+				66987E3318DDD80400365AC9 /* Frameworks */,
+				66987E3418DDD80400365AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66987E3C18DDD80400365AC9 /* PBXTargetDependency */,
+			);
+			name = AwesomeVimeoFeedTests;
+			productName = AwesomeVimeoFeedTests;
+			productReference = 66987E3618DDD80400365AC9 /* AwesomeVimeoFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66987E0D18DDD80400365AC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AVF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Juan Manuel Serruya";
+				TargetAttributes = {
+					66987E3518DDD80400365AC9 = {
+						TestTargetID = 66987E1418DDD80400365AC9;
+					};
+				};
+			};
+			buildConfigurationList = 66987E1018DDD80400365AC9 /* Build configuration list for PBXProject "AwesomeVimeoFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66987E0C18DDD80400365AC9;
+			productRefGroup = 66987E1618DDD80400365AC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */,
+				66987E3518DDD80400365AC9 /* AwesomeVimeoFeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66987E1318DDD80400365AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E3118DDD80400365AC9 /* Images.xcassets in Resources */,
+				66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */,
+				66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3418DDD80400365AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E4218DDD80400365AC9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66987E1118DDD80400365AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */,
+				66987E2518DDD80400365AC9 /* main.m in Sources */,
+				66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66987E3218DDD80400365AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66987E4418DDD80400365AC9 /* AwesomeVimeoFeedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66987E3C18DDD80400365AC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66987E1418DDD80400365AC9 /* AwesomeVimeoFeed */;
+			targetProxy = 66987E3B18DDD80400365AC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66987E2118DDD80400365AC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E2218DDD80400365AC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66987E2A18DDD80400365AC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E2B18DDD80400365AC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66987E4018DDD80400365AC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66987E4118DDD80400365AC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66987E4518DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66987E4618DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66987E4818DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66987E4918DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeed/AwesomeVimeoFeed-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		66987E4B18DDD80400365AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		66987E4C18DDD80400365AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AwesomeVimeoFeed.app/AwesomeVimeoFeed";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AwesomeVimeoFeed/AwesomeVimeoFeed-Prefix.pch";
+				INFOPLIST_FILE = "AwesomeVimeoFeedTests/AwesomeVimeoFeedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66987E1018DDD80400365AC9 /* Build configuration list for PBXProject "AwesomeVimeoFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4518DDD80400365AC9 /* Debug */,
+				66987E4618DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66987E4718DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4818DDD80400365AC9 /* Debug */,
+				66987E4918DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66987E4A18DDD80400365AC9 /* Build configuration list for PBXNativeTarget "AwesomeVimeoFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66987E4B18DDD80400365AC9 /* Debug */,
+				66987E4C18DDD80400365AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66987E0D18DDD80400365AC9 /* Project object */;
+}
