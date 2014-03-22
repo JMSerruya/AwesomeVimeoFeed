@@ -40,7 +40,7 @@
     self.videoUploadDate.text = [self formatDate:data.videoUploadDate];
     [self.videoThumb setImageWithURL:[NSURL URLWithString:data.videoThumb]
                       placeholderImage:nil];
-    self.videoDescription.text = [self stringByStrippingHTML:data.description];
+    self.videoDescription.text = [self stringByStrippingHTML:data.videoDescription];
     self.videoTitle.text = data.videoTitle;
 }
 
@@ -71,7 +71,6 @@
             [outString deleteCharactersInRange:r];
         }
     }
-
     return outString;
 }
 
