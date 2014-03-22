@@ -7,7 +7,6 @@
 //
 
 #import "AVFFeedViewController.h"
-//#import "SVProgressHUD"
 #import "AVFAPIWrapper.h"
 #import "AVFVideoCell.h"
 
@@ -33,12 +32,10 @@
     UINib * feedCellNib = [UINib nibWithNibName:@"VideoFeedItem" bundle:nil];
     [self.tableView registerNib:feedCellNib forCellReuseIdentifier:@"AVFVideoCell"];
 
-    //[SVProgressHUD showWithStatus:@"Loading Feed"];
     [[AVFAPIWrapper instance] requestVideosForPage:1 callback:^(BOOL success, NSData *response, NSError *error) {
         self.dataArray = (NSArray*) response;
         NSLog(@"%d", [self.dataArray count]);
         [self.tableView reloadData];
-        //[SVProgressHUD dismiss];
     }];
 }
 
@@ -75,4 +72,26 @@
     
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *) cell     forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    int totalPageCount =
+    int count = [self.dataArray count];;
+
+    if(indexPath.row == count - 1) // If going to display last row available in the array download the others.
+    {
+        //totalPageCount is the total pages available in the server. This needs to be stored on initial server call
+        //currentIndex is the index of page last retreived from server. This needs to be incremented every time new page is retreived.
+        if(currentIndex <= totalPageCount)
+        {
+            [self getContentsForPage:currentIndex];
+        }
+        else
+        {
+            self.tableView.tableFooterView = nil; //You can add an activity indicator in tableview's footer in viewDidLoad to show a loading status to user.
+        }
+
+    }
+}
+
 @end
