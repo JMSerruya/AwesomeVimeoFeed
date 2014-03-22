@@ -246,11 +246,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVFVideoCell.m"
-            timestampString = "417207911.487172"
+            timestampString = "417208014.412199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-stringByStrippingHTML:"
             landmarkType = "5">
          </BreakpointContent>
