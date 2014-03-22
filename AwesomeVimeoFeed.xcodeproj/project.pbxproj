@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 660C6E5D18DDD8F60080121B /* AVFAPIWrapper.m */; };
+		660C6E6318DDEBEA0080121B /* VideoFeedItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660C6E6218DDEBEA0080121B /* VideoFeedItem.xib */; };
+		660C6E6618DDED440080121B /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 660C6E6418DDED440080121B /* playbutton.png */; };
+		660C6E6718DDED440080121B /* playbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 660C6E6518DDED440080121B /* playbutton@2x.png */; };
+		660C6E6A18DDF2230080121B /* AVFVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 660C6E6918DDF2230080121B /* AVFVideoCell.m */; };
 		66987E1918DDD80400365AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1818DDD80400365AC9 /* Foundation.framework */; };
 		66987E1B18DDD80400365AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1A18DDD80400365AC9 /* CoreGraphics.framework */; };
 		66987E1D18DDD80400365AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66987E1C18DDD80400365AC9 /* UIKit.framework */; };
@@ -38,6 +42,11 @@
 /* Begin PBXFileReference section */
 		660C6E5C18DDD8F60080121B /* AVFAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFAPIWrapper.h; sourceTree = "<group>"; };
 		660C6E5D18DDD8F60080121B /* AVFAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFAPIWrapper.m; sourceTree = "<group>"; };
+		660C6E6218DDEBEA0080121B /* VideoFeedItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoFeedItem.xib; sourceTree = "<group>"; };
+		660C6E6418DDED440080121B /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		660C6E6518DDED440080121B /* playbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playbutton@2x.png"; sourceTree = "<group>"; };
+		660C6E6818DDF2230080121B /* AVFVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFVideoCell.h; sourceTree = "<group>"; };
+		660C6E6918DDF2230080121B /* AVFVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFVideoCell.m; sourceTree = "<group>"; };
 		66987E1518DDD80400365AC9 /* AwesomeVimeoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeVimeoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66987E1818DDD80400365AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66987E1A18DDD80400365AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,9 +113,30 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		660C6E6118DDEB670080121B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				660C6E6418DDED440080121B /* playbutton.png */,
+				660C6E6518DDED440080121B /* playbutton@2x.png */,
+				660C6E6218DDEBEA0080121B /* VideoFeedItem.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		660C6E6B18DDF2290080121B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				660C6E6818DDF2230080121B /* AVFVideoCell.h */,
+				660C6E6918DDF2230080121B /* AVFVideoCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		66987E0C18DDD80400365AC9 = {
 			isa = PBXGroup;
 			children = (
+				660C6E6B18DDF2290080121B /* Cells */,
+				660C6E6118DDEB670080121B /* Resources */,
 				66987E1E18DDD80400365AC9 /* AwesomeVimeoFeed */,
 				66987E3D18DDD80400365AC9 /* AwesomeVimeoFeedTests */,
 				66987E1718DDD80400365AC9 /* Frameworks */,
@@ -260,6 +290,9 @@
 			files = (
 				66987E3118DDD80400365AC9 /* Images.xcassets in Resources */,
 				66987E2318DDD80400365AC9 /* InfoPlist.strings in Resources */,
+				660C6E6318DDEBEA0080121B /* VideoFeedItem.xib in Resources */,
+				660C6E6618DDED440080121B /* playbutton.png in Resources */,
+				660C6E6718DDED440080121B /* playbutton@2x.png in Resources */,
 				66987E2C18DDD80400365AC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +347,7 @@
 			files = (
 				66987E2918DDD80400365AC9 /* AVFAppDelegate.m in Sources */,
 				66987E2518DDD80400365AC9 /* main.m in Sources */,
+				660C6E6A18DDF2230080121B /* AVFVideoCell.m in Sources */,
 				660C6E5E18DDD8F60080121B /* AVFAPIWrapper.m in Sources */,
 				66987E2F18DDD80400365AC9 /* AVFViewController.m in Sources */,
 			);

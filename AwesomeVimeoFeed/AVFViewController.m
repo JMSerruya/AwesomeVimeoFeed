@@ -8,6 +8,7 @@
 
 #import "AVFViewController.h"
 #import "AVFAPIWrapper.h"
+#import "SVProgressHUD.h"
 
 @interface AVFViewController ()
 
@@ -19,9 +20,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [SVProgressHUD showWithStatus:@"Loading Feed"];
     [[AVFAPIWrapper instance] requestVideosForPage:2 callback:^(BOOL success, NSData *response, NSError *error) {
         NSDictionary * videos = (NSDictionary*) response;
         NSLog(@"%@", videos);
+        [SVProgressHUD dismiss];
     }];
 }
 
